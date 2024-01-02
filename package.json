@@ -1,0 +1,53 @@
+{
+  "type": "module",
+  "name": "tailwindcss-grid-areas",
+  "version": "0.1.1",
+  "description": "A Tailwind CSS plugin designed to streamline the creation of utility classes for defining grid areas in your layouts. This plugin simplifies the process of specifying grid areas, automatically generating corresponding utility classes that seamlessly integrate with your Tailwind styles.",
+  "private": false,
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild",
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "test": "vitest",
+    "test:precommit": "vitest --watch=false",
+    "prepare": "husky install",
+    "release-notes": "node ./scripts/release-notes.cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaleXHolguin/tailwindcss-grid-areas.git"
+  },
+  "keywords": [
+    "tailwindcss",
+    "grid-template-areas",
+    "utilities",
+    "plugin",
+    "layout",
+    "css"
+  ],
+  "author": "Jonathan Holguin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JaleXHolguin/tailwindcss-grid-areas/issues"
+  },
+  "homepage": "https://github.com/JaleXHolguin/tailwindcss-grid-areas#readme",
+  "devDependencies": {
+    "@types/lodash.merge": "^4.6.9",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "eslint": "^8.56.0",
+    "husky": "^8.0.3",
+    "lodash.merge": "^4.6.2",
+    "prettier": "^3.1.1",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0",
+    "vitest": "^1.1.1"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.0.0"
+  }
+}
