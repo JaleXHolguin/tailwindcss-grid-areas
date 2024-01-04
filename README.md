@@ -29,7 +29,7 @@ Import and add the plugin in your [Tailwind Config](https://tailwindcss.com/docs
 
 ```ts
 import type { Config } from "tailwindcss";
-import gridAreas from "tailwindcss-grid-areas";
+import { gridAreas } from "tailwindcss-grid-areas";
 
 const config: Config = {
   plugins: [gridAreas()],
@@ -74,15 +74,14 @@ Within the configuration object, use the gridAreas plugin to specify custom temp
 
 ```ts
 import type { Config } from "tailwindcss";
-import gridAreas from "@jalex/tailwind-grid-areas";
+import { gridAreas } from "tailwindcss-grid-areas";
 
 const config: Config = {
-  plugins: [gridAreas({
-    header: [
-      "ham logo actions",
-      "search search search"
-    ]
-  )],
+  plugins: [
+    gridAreas({
+      header: ["ham logo actions", "search search search"],
+    }),
+  ],
 };
 export default config;
 ```
@@ -125,7 +124,7 @@ To define a custom template area with responsive behavior, specify the template 
 
 ```ts
 import type { Config } from "tailwindcss";
-import gridAreas from "@jalex/tailwind-grid-areas";
+import { gridAreas } from "tailwindcss-grid-areas";
 
 const config: Config = {
   plugins: [
